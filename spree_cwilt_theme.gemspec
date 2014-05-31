@@ -3,8 +3,8 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_cwilt_theme'
   s.version     = '2.2.2'
-  s.summary     = 'Add gem summary here'
-  s.description = 'Add (optional) gem description here'
+  s.summary     = 'Cwilt Spree Theme'
+  s.description = 'Spree theme for shop.cwilt.co.uk.'
   s.required_ruby_version = '>= 1.9.3'
 
   s.author    = 'Craig Lomax'
