@@ -3,13 +3,13 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_cwilt_theme'
   s.version     = '2.2.2'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.summary     = 'Add gem summary here'
+  s.description = 'Add (optional) gem description here'
   s.required_ruby_version = '>= 1.9.3'
 
-   s.author    = 'Craig Lomax'
-   s.email     = 'craig@clomax.me.uk'
-   s.homepage  = 'http://clomax.me.uk'
+  s.author    = 'Craig Lomax'
+  s.email     = 'craig@clomax.me.uk'
+  s.homepage  = 'http://clomax.me.uk'
 
   #s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
