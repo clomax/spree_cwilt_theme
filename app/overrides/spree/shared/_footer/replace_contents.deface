@@ -2,6 +2,10 @@ Deface::Override.new(
   :virtual_path => 'spree/shared/_footer',
   :replace      => 'p',
   :original     => "Powered by Spree",
-  :text         => "<h2>TWAT</h2>",
+  :text         =>
+    "<h2>CONTACT</h2><br/>
+     CONTACT INFORMATION<br/>
+     GOES HERE<br/>
+     07123456789",
   :name         => "replace_contents"
 )
