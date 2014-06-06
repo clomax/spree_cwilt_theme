@@ -3,7 +3,7 @@ Deface::Override.new(
   :replace      => 'p',
   :original     => "Powered by Spree",
   :text         =>
-    "<div id="contents">
+    "<div id=\"contents\">
        <h2>CONTACT</h2>
        CONTACT INFORMATION<br/>
        GOES HERE<br/>
