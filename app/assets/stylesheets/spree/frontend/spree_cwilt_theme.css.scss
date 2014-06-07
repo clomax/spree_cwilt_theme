@@ -1,0 +1,39 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-repeat: repeat;
+  background-image: url(<%= asset_path 'spree/frontend/bg.png' %>);
+}
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+  border-top: 6px solid #bbb;
+  background-color: #fff;
+
+  -moz-box-shadow:    0px 0px 10px 10px #ccc;
+  -webkit-box-shadow: 0px 0px 10px 10px #ccc;
+  box-shadow:         0px 0px 10px 10px #ccc;
+}
+
+footer#footer {
+  border-top: 6px solid #bbb;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #eee;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+footer h2 {
+  font-size: 1.3em;
+}
+
+footer div#contents {
+  margin-left: 50px;
+}
