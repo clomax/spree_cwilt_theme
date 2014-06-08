@@ -1,1 +1,2 @@
+remove "erb[loud]:contains('form_tag spree.products_path')"
 remove "erb[loud]:contains('submit_tag Spree.t(:search)')"
