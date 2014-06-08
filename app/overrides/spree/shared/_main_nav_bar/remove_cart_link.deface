@@ -1,2 +1,2 @@
 remove "li#link-to-cart"
-remove "script"
+closing_selector "script"
