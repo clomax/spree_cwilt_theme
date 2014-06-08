@@ -1,5 +1,7 @@
 Deface::Override.new(
   :virtual_path => 'spree/shared/_search',
-  :remove       => "erb[loud]:contains('t(:search)')",
+  :replace      => "erb[loud]:contains('t(:search)')",
+  :original     => "<%= submit_tag Spree.t(:search), :name => nil %>",
+  :text         => "",
   :name         => 'remove_submit_button'
 )
