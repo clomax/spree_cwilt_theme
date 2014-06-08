@@ -1,1 +1,1 @@
-remove "erb[loud]:contains('submit_tag')"
+remove "erb[loud]:contains('submit_tag Spree.t(:search)')"
