@@ -13,6 +13,7 @@ a:hover {
 
 body {
   height: 100%;
+  min-height: 100%;
   background-repeat: repeat;
   background-image: url(<%= asset_path 'spree/frontend/bg.png' %>);
 }
@@ -51,7 +52,10 @@ footer#footer {
   background-color: #eee;
   height: 100px;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
+  -moz-box-shadow:    0px 0px 10px 10px #ccc;
+  -webkit-box-shadow: 0px 0px 10px 10px #ccc;
+  box-shadow:         0px 0px 10px 10px #ccc;
 }
 
 footer h2 {
