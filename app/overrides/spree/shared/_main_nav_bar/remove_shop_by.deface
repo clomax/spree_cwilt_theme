@@ -1,2 +1,2 @@
-replace "erb[loud]:contains(\"Spree.t(:shop_by_taxonomy,)\")"
-text    "<h6 class='taxonomy-root'><%= Spree.t(:taxonomy => taxonomy.name)%></h6>"
+replace 'erb[loud]:contains(":shop_by_taxonomy")'
+text    '<h6 class='taxonomy-root'><%= Spree.t(:taxonomy => taxonomy.name)%></h6>'
