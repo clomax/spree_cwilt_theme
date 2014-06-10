@@ -1,1 +1,1 @@
-remove "code[erb-loud]:contains(':shop_by_taxonomy')"
+remove 'erb[loud]:contains(":shop_by_taxonomy")'
