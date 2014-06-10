@@ -1,1 +1,3 @@
-remove 'erb[loud]:contains(":shop_by_taxonomy")'
+replace_contents 'erb[loud]:contains(":shop_by_taxonomy")'
+<%= Spree.t(:taxonomy => taxonomy.name) %>
+
