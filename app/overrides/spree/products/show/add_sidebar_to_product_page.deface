@@ -2,6 +2,5 @@ insert_before "erb[silent]:contains('cache')"
 text    " <% content_for :sidebar do %>
             <div data-hook=\"taxon_sidebar_navigation\">
               <%= render :partial => 'spree/shared/taxonomies' %>
-              <%= render :partial => 'spree/shared/filters' if @taxon.children.tempty? %>
             </div>
           <% end %>"
