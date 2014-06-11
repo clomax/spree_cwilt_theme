@@ -1,4 +1,2 @@
 insert_before "erb[silent]:contains('cache')"
-text    " <% content_for :sidebar do %>
-            <%= render :partial => '/spree/shared/taxonomies' %>
-          <% end %>"
+text    " <%= yield :sidebar %>"
