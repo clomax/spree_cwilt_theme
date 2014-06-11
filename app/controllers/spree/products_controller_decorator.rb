@@ -1,5 +1,5 @@
 module Spree
-  ProductController.class_eval do
+  ProductsController.class_eval do
 
     def show
       @variants = @product.variants_including.active(current_currency).includes([:option_values, :images])
