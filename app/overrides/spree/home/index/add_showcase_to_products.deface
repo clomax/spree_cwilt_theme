@@ -1,2 +1,2 @@
-insert_after "[data-hook='homepage_products']"
+insert_before "[data-hook='homepage_products']"
 text  "<div id=\"showcase\" class=\"showcase\"></div>"
