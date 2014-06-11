@@ -1,0 +1,2 @@
+insert_after "erb[silent]:contains('cache')"
+test  "<%= render :partial => 'spree/shared/sidebar' if content_for? :sidebar %>"
