@@ -1,0 +1,2 @@
+insert_before "erb[silent]:contains('end')"
+text  "<div id=\"showcase\" class=\"showcase\"></div>"
