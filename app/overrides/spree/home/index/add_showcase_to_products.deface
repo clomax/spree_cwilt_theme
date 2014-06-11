@@ -1,2 +1,2 @@
-insert_before "erb[silent]:contains('end')"
+insert_after "[data-hook='homepage_products']"
 text  "<div id=\"showcase\" class=\"showcase\"></div>"
