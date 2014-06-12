@@ -1,2 +1,2 @@
 replace  "span.price.selling"
-text    "<span class=\"price selling\" itemprop=\"price\"><%= display_price(@product) %></span>"
+text     "<div><span class=\"price selling\" itemprop=\"price\"><%= display_price(@product) %></span><span itemprop=\"priceCurrency\" content=\"<%= @product.currency %%>\"></span></div>"
