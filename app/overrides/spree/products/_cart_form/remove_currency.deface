@@ -1,1 +1,1 @@
-remove "erb[loud]:contains(\"@product.currency\")"
+remove "span[2]"
