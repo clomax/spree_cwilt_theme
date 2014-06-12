@@ -1,2 +1,2 @@
 insert_after "erb[loud]:contains('accurate_title')"
-text  " <%= property_value_for('Brand') %>"
+text  " <%= property_value_for(@product, 'Brand') %>"
