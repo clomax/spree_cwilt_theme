@@ -1,5 +1,5 @@
 insert_after "erb[loud]:contains('accurate_title')"
-text  " <% brand = property_value_for(@product, 'Brand') %>
-        <% if brand %>
-          <%= puts \" - #{brand}\" %>
+text  " <% @brand = property_value_for(@product, 'Brand') %>
+        <% if @brand %>
+          <%= puts \" - #{@brand}\" %>
         <% end %>"
