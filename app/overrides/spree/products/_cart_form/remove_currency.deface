@@ -1,2 +1,2 @@
 replace "erb[loud]:contains(\"display_price(@product)\")"
-text    "<span class=\"price selling\" itemprop=\"price\"><%= display_price(product) %></span>"
+text    "<span class=\"price selling\" itemprop=\"price\"><%= display_price(@product) %></span>"
