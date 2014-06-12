@@ -1,2 +1,2 @@
-remove  "span.price.selling"
+replace  "span.price.selling"
 text    "<span class=\"price selling\" itemprop=\"price\"><%= display_price(@product) %></span>"
