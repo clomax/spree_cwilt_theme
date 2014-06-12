@@ -1,0 +1,2 @@
+replace "erb[loud]:contains "<%= variant_options variant %>"
+text    "<%= variant %>"
