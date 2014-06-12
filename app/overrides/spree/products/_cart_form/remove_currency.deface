@@ -1,1 +1,2 @@
-remove "span[2]"
+replace "erb[loud]:contains(\"display_price(@product)\")"
+text    " <%= @product.price_in(curr).dusplay_price %>"
