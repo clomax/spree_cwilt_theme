@@ -1,2 +1,2 @@
 replace "erb[loud]:contains(\"display_price(@product)\")"
-text    " <%= @product.price_in(curr).display_price %>"
+text    " <%= @product.price_in(current_currency).display_price %>"
