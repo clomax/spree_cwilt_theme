@@ -1,2 +1,2 @@
-insert_after  "span.product-price"
+insert_after  "span#product-price"
 text     "<span class=\"price selling\" itemprop=\"price\"><% display_price(@product) %></span>"
