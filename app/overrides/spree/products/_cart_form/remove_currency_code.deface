@@ -1,6 +1,6 @@
-replace "div#product-price"
+replace "div#product_price"
 text    "<div id=\"product-price\">
-        <span class=\"price selling\" itemprop=\"price\">
+        <span>
           <%= Spree::Money.new(@product.price, currency: current_currency, with_currency: false).to_s %>
         </span>
 
