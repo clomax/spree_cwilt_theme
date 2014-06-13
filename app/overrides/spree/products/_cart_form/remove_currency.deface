@@ -1,2 +1,0 @@
-replace  "div#product-price"
-text     "<span class=\"price selling\" itemprop=\"price\"><% display_price(@product) %></span>"

@@ -1,0 +1,2 @@
+insert_after "li#home-link"
+text         "<li id="fabircs-link"><%= link_to "Fabric", "t/fabric" %></li>"
