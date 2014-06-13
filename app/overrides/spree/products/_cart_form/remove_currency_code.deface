@@ -1,7 +1,7 @@
 replace "div#product-price"
 text    "<div id=\"product-price\">
         <span class=\"price selling\" itemprop=\"price\">
-          <%= Spree::Money.new(variant.price, currency: current_currency, with_currency: true).to_s %>
+          <%= Spree::Money.new(@product.price, currency: current_currency, with_currency: true).to_s %>
         </span>
 
         <% if @product.master.can_supply? %>
