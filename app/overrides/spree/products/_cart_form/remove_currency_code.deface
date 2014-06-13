@@ -1,11 +1,11 @@
 replace "div#product-price"
-text    "<div id=\"PPPPPPPPP\">
-        <span class=\"price selling\" itemprop=\"price\">
+text    "<div id=\"product-price\">
+        <span itemprop=\"price\">
           <%= Spree::Money.new(@product.price, currency: current_currency, with_currency: true).to_s %>
         </span>
 
         <% if @product.master.can_supply? %>
-          <link itemprop=\"availability\" href=\"http://scheme.org/InStock\" />
+          <link itemprop=\"availability\" href=\"http://schema.org/InStock\" />
         <% elsif @product.variants.empty? %>
           <br/>
           <span class=\"out-of-stock\"><%= Spree.t(:out_of_stock) %></span>
