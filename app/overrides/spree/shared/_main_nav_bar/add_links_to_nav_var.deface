@@ -1,6 +1,6 @@
 insert_after "li#home-link"
-text         "<li id=\"fabircs-link\">     <%= link_to \"Fabric\",       \"t/fabric\" %></li>
-              <li id=\"haberdashery-link\"><%= link_to \"Haberdashery\", \"t/haberdashery\" %></li>
-              <li id=\"sizeguide-link\">   <%= link_to \"Size Guide\",   \"t/size-guide\" %></li>
-              <li id=\"delivery-link\">    <%= link_to \"Delivery\",     \"t/delivery\" %></li>
+text         "<li id=\"fabircs-link\">     <%= link_to \"Fabric\"        spree.root_path + \"t/fabric\" %></li>
+              <li id=\"haberdashery-link\"><%= link_to \"Haberdashery\", spree.root_path + \"t/haberdashery\" %></li>
+              <li id=\"sizeguide-link\">   <%= link_to \"Size Guide\",   spree.root_path + \"t/size-guide\" %></li>
+              <li id=\"delivery-link\">    <%= link_to \"Delivery\",     spree.root_path + \"t/delivery\" %></li>
               <li id=\"blog-link\">        <%= link_to \"blog\",         \"http://blog.cwilt.co.uk\" %></li>"
