@@ -1,6 +1,14 @@
 insert_after "li#home-link"
 text         "<li id=\"fabircs-link\">     <%= link_to \"Fabric\",       spree.root_path + \"t/fabric\" %></li>
+
+
+              <ul>
               <li id=\"haberdashery-link\"><%= link_to \"Haberdashery\", spree.root_path + \"t/haberdashery\" %></li>
+              <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
+                <li><%= link_to child.name, spree.root_path + \"t/haberdashery/#{child.name}\" %></li>
+              <% end %>
+              </ul>
+
               <li id=\"sizeguide-link\">   <%= link_to \"Size Guide\",   spree.root_path + \"t/size-guide\" %></li>
               <li id=\"delivery-link\">    <%= link_to \"Delivery\",     spree.root_path + \"t/delivery\" %></li>
               <li id=\"blog-link\">        <%= link_to \"blog\",         \"http://blog.cwilt.co.uk\" %></li>"
