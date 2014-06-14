@@ -4,7 +4,7 @@ text         "<li id=\"fabircs-link\">     <%= link_to \"Fabric\",       spree.r
 
               <ul>
               <li id=\"haberdashery-link\"><%= link_to \"Haberdashery\", spree.root_path + \"t/haberdashery\" %></li>
-              <% Spree::Taxon.find_by(name: \"Haberdashery\").children.each { |child|
+              <% Spree::Taxon.find_by(name: 'Haberdashery').children.each { |child|
                 <li><%= link_to child.name, spree.root_path + \"t/haberdashery/#{child.name}\" %></li>
               } %>
               </ul>
