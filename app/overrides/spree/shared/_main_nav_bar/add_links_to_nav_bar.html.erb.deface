@@ -4,7 +4,7 @@
 <li id="haberdashery-link" class="taxon-menu-item"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %>
   <ul>
     <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
-      <li class="subtaxon-menu-item"><%= child.name %></li>
+      <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/haberdashery/" + child.name.downcase %></li>
     <% end %>
   </ul>
 </li>
