@@ -3,7 +3,7 @@
 
 <li id="haberdashery-link"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %>
   <ul>
-    <% Spree:Taxon.find_by(name: "Haberdashery").children.each do |child| %>
+    <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
       <li><%= child.name %></li>
     <% end %>
   </ul>
