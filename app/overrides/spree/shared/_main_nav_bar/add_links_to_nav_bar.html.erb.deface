@@ -1,12 +1,13 @@
 <!-- insert_after 'li#home-link' -->
 <li id="fabrics-link">     <%= link_to "Fabric",       spree.root_path + "t/fabric" %></li>
 
-<ul>
-  <li id="haberdashery-link"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %></li>
-  <% Spree:Taxon.find_by(name: "Haberdashery").children.each do |child| %>
-    <li><%= child.name %></li>
-  <% end %>
-</ul>
+<li id="haberdashery-link"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %>
+  <ul>
+    <% Spree:Taxon.find_by(name: "Haberdashery").children.each do |child| %>
+      <li><%= child.name %></li>
+    <% end %>
+  </ul>
+</li>
 
 <li id="sizeguide-link">   <%= link_to "Size Guide",   spree.root_path + "t/size-guide" %></li>
 <li id="delivery-link">    <%= link_to "Delivery",     spree.root_path + "t/delivery" %></li>
