@@ -1,7 +1,7 @@
 <!-- insert_after 'li#home-link' -->
-<li id="fabrics-link">     <%= link_to "Fabric",       spree.root_path + "t/fabric" %></li>
+<li id="fabrics-link" class="taxon-menu-item">     <%= link_to "Fabric",       spree.root_path + "t/fabric" %></li>
 
-<li id="haberdashery-link"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %>
+<li id="haberdashery-link" class="taxon-menu-item"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %>
   <ul>
     <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
       <li class="subtaxon-menu-item"><%= child.name %></li>
@@ -9,6 +9,6 @@
   </ul>
 </li>
 
-<li id="sizeguide-link">   <%= link_to "Size Guide",   spree.root_path + "t/size-guide" %></li>
-<li id="delivery-link">    <%= link_to "Delivery",     spree.root_path + "t/delivery" %></li>
-<li id="blog-link">        <%= link_to "blog",         "http://blog.cwilt.co.uk"%></li>
+<li id="sizeguide-link" class="taxon-menu-item">   <%= link_to "Size Guide",   spree.root_path + "t/size-guide" %></li>
+<li id="delivery-link" class="taxon-menu-item">    <%= link_to "Delivery",     spree.root_path + "t/delivery" %></li>
+<li id="blog-link" class="taxon-menu-item">        <%= link_to "blog",         "http://blog.cwilt.co.uk"%></li>
