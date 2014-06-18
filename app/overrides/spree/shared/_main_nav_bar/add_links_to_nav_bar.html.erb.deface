@@ -2,7 +2,7 @@
 <li id="fabrics-link" class="taxon-menu-item">     <%= link_to "Fabric",       spree.root_path + "t/fabric" %></li>
 
 <li id="haberdashery-link" class="taxon-menu-item"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %>
-  <ul>
+  <ul class="subtaxon-menu">
     <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
       <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/haberdashery/" + child.name.downcase %></li>
     <% end %>
