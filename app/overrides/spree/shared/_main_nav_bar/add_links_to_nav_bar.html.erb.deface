@@ -1,4 +1,6 @@
-<!-- insert_after 'li#home-link' -->
+<!-- replace 'li#home-link' -->
+<li id="home-link" class="taxon-menu-item" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+
 <li id="fabrics-link" class="taxon-menu-item">     <%= link_to "Fabric",       spree.root_path + "t/fabric" %>
   <ul class="subtaxon-menu">
     <% Spree::Taxon.find_by(name: "Fabric").children.each do |child| %>
