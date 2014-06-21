@@ -1,0 +1,6 @@
+<!-- insert_after 'erb[loud]:contains("spree/shared/main_nav_bar")' -->
+<noscript>
+  <%= link_to Spree.t(:cart), '/cart' %>
+</noscript>
+&nbsp;
+<script>Spree.fetch_cart()</script>
