@@ -4,8 +4,8 @@
 
   <div data-hook="product_taxons">
     <ul class="inline product-listing" data-hook>
-
-    <% @product.taxons.each do |taxon| %>
+    <% taxons = @product.taxons %>
+    <% taxons.each do |taxon| %>
       <li id="product_<%= @product.id %>" class="columns three <%= cycle("alpha", "secondary", "", "omega secondary", :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
         <%= link_to taxon.name, seo_url(taxon) %>
       </li>
