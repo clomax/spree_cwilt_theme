@@ -1,0 +1,2 @@
+<!-- insert_after 'div.columns.ten.omega' -->
+<%= render :partial => 'taxons' %>
