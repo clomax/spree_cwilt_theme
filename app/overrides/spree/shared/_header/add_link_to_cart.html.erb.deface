@@ -1,6 +1,10 @@
-<!-- insert_after 'erb[loud]:contains("spree/shared/main_nav_bar")' -->
-<noscript>
-  <%= link_to Spree.t(:cart), '/cart' %>
-</noscript>
-&nbsp;
-<script>Spree.fetch_cart()</script>
+<!-- insert_before 'erb[loud]:contains("spree/shared/main_nav_bar")' -->
+<ul>
+  <li id="link-to-cart" data-hook>
+    <noscript>
+      <%= link_to Spree.t(:cart), '/cart' %>
+    </noscript>
+  </li>
+  &nbsp;
+  <script>Spree.fetch_cart()</script>
+<ul>
