@@ -1,0 +1,7 @@
+<!-- replace 'li#link-to-cart' -->
+<li id="link-to-cart" class="taxon-menu-item" data-hook>
+  <noscript>
+    <%= link_to Spree.t(:cart), '/cart' %>
+  </noscript>
+</li>
+
