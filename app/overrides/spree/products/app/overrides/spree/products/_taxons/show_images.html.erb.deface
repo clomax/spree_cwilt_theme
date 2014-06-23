@@ -1,14 +1,18 @@
 <!-- replace 'ul#similar_items_by_taxon' -->
+
+<% (1..4).each do %>
+  <% products = [] %>
+  <% taxons = @product.taxons %>
+  <% taxon = taxons.sample %>
+  <% product = taxon.products.all.sample %>
+  <% products.push(product) unless products.include?(product) %>
+<% end %>
+
 <ul id="#similar_items_by_taxon" data-hook>
-  <% (1..4).each do %>
-    <% products = [] %>
-    <% taxons = @product.taxons %>
-    <% taxon = taxons.sample %>
-    <% product = taxon.products.all.sample %>
-    <% products.push(product) unless products.include?(product) %>
+  <% (1..4).each do |i| %>
     <li>
-      <%= product.name.to_s %>
-      <%= link_to small_image(product, :itemprop => "image") %>
+      <%= products[i].name.to_s %>
+      <%= link_to small_image(products[i], :itemprop => "image") %>
     </li>
   <% end %>
 </ul>
