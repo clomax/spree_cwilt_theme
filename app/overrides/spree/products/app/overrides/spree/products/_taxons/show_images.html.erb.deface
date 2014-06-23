@@ -3,7 +3,9 @@
   <% (1..4).each do %>
     <% taxons = @product.taxons %>
     <% taxon = taxons.sample %>
-    <% taxons.delete(taxon) %>
+    <% if taxon.length > 1 %>
+      <% taxons.delete(taxon) %>
+    <% end %>
     <%= taxon.name.to_s %>
   <% end %>
 </ul>
