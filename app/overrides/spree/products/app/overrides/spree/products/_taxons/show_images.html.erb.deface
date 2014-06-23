@@ -10,8 +10,9 @@
 <ul id="#similar_items_by_taxon" data-hook>
   <% products.each do |p| %>
     <li>
-      <%= p.name.to_s %>
-      <%= link_to small_image(p, :itemprop => "image") %>
+      <div class="product-image">
+        <%= link_to small_image(p, :itemprop => "image") %>
+      </div>
     </li>
   <% end %>
 </ul>
