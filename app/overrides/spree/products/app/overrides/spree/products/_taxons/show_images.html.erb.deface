@@ -8,6 +8,7 @@
     <% products.push(product) unless products.include?(product) %>
     <li>
       <%= product.name.to_s %>
+      <%= link_to small_image(product, :itemprop => "image") %>
     </li>
   <% end %>
 </ul>
