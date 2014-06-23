@@ -1,11 +1,11 @@
 <!-- replace 'ul#similar_items_by_taxon' -->
 <ul id="#similar_items_by_taxon" data-hook>
   <% (1..4).each do %>
+    <% products = [] %>
     <% taxons = @product.taxons %>
     <% taxon = taxons.sample %>
-    <% if taxon.length > 1 %>
-      <% taxons.delete(taxon) %>
-    <% end %>
-    <%= taxon.name.to_s %>
+    <% product = taxons.products.sample %>
+    <% products.push(product) unless products.include?(product) %>
+    <%= product.name.to_s %>
   <% end %>
 </ul>
