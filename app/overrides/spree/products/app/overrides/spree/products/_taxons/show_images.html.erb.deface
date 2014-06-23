@@ -4,7 +4,7 @@
     <% products = [] %>
     <% taxons = @product.taxons %>
     <% taxon = taxons.sample %>
-    <% product = taxons.products.all.sample %>
+    <% product = taxon.products.all.sample %>
     <% products.push(product) unless products.include?(product) %>
     <%= product.name.to_s %>
   <% end %>
