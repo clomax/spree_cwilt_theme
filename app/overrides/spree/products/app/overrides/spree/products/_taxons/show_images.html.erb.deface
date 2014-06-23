@@ -8,10 +8,10 @@
 <% end %>
 
 <ul id="#similar_items_by_taxon" data-hook>
-  <% products.each do |i| %>
+  <% products.each do |p| %>
     <li>
-      <%= products[i].name.to_s %>
-      <%= link_to small_image(products[i], :itemprop => "image") %>
+      <%= p.name.to_s %>
+      <%= link_to small_image(p, :itemprop => "image") %>
     </li>
   <% end %>
 </ul>
