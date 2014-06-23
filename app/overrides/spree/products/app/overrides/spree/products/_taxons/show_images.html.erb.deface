@@ -6,6 +6,8 @@
     <% taxon = taxons.sample %>
     <% product = taxon.products.all.sample %>
     <% products.push(product) unless products.include?(product) %>
-    <%= product.name.to_s %>
+    <li>
+      <%= product.name.to_s %>
+    </li>
   <% end %>
 </ul>
