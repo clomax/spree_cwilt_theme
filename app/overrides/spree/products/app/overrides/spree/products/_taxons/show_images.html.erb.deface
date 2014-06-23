@@ -1,0 +1,7 @@
+<!-- replace 'ul#similar_items_by_taxon' -->
+<ul id="#similar_items_by_taxon" data-hook>
+  <% 4.times.do %>
+    <% taxon = @product.taxons.sample %>
+    <%= taxon %>
+  <% end %>
+</ul>
