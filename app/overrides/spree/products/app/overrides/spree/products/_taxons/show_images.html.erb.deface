@@ -1,7 +1,9 @@
 <!-- replace 'ul#similar_items_by_taxon' -->
 <ul id="#similar_items_by_taxon" data-hook>
   <% (1..4).each do %>
-    <% taxon = @product.taxons.sample %>
+    <% taxons = @product.taxons %>
+    <% taxon = taxons.sample %>
+    <% taxons.delete(taxon) %>
     <%= taxon.name.to_s %>
   <% end %>
 </ul>
