@@ -12,8 +12,8 @@
 <ul id="#similar_items_by_taxon" data-hook>
   <% (1..4).each do |i| %>
     <li>
-      <!--<%= products[i].name.to_s %>-->
-      <!--<%= link_to small_image(products[i], :itemprop => "image") %>-->
+      <!-- <%= products[i].name.to_s %> -->
+      <!-- <%= link_to small_image(products[i], :itemprop => "image") %> -->
     </li>
   <% end %>
 </ul>
