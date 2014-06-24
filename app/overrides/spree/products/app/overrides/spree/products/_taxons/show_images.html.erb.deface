@@ -11,7 +11,7 @@
   <% products.each do |p| %>
     <li>
       <div class="product-image">
-        <%= link_to small_image(p, :itemprop => "image") %>
+        <%= link_to small_image(p, :itemprop => "image"), url, :itemprop => 'url' %>
       </div>
     </li>
   <% end %>
