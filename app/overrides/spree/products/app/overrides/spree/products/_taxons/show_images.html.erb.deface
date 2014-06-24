@@ -4,7 +4,7 @@
   <% taxons = @product.taxons %>
   <% taxon = taxons.sample %>
   <% product = taxon.products.all.sample %>
-  <% products.push(product) unless products.include?(product) %>
+  <% products.push(product) unless products.include?(product) or products.include?(@product) %>
 <% end %>
 
 <ul id="#similar_items_by_taxon" data-hook>
