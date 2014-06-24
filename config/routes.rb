@@ -1,6 +1,3 @@
-Spree::Core::Engine.routes.draw do
-end
-
-Spree::Core::Engine.routes.prepend do
+Spree::Core::Engine.routes.add_routes do
   get '/collections', to: 'collections#index'
 end
