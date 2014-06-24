@@ -1,7 +1,6 @@
 class CollectionsController < Spree::StoreController
 
-  def index
-    @collections = Spree::Taxon.find_by(name: "Collection").children.load
+  def show
   end
 
 end
