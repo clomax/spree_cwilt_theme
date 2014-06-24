@@ -1,0 +1,4 @@
+<!-- replace '[data-hook='homepage_products']' -->
+<div data-hook="homepage_collections">
+  <%= render :partial => 'spree/shared/collections', :locals => { :collection => @products } %>
+</div>
