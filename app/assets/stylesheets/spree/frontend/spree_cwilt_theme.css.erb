@@ -139,6 +139,8 @@ nav #main-nav-bar li#link-to-cart a {
 }
 
 div #taxon-crumbs {
+  border-top: 1px dashed #999999;
+  padding-top: 20px;
   width: 100%;
   font-family: georgia;
   clear: both;
@@ -184,7 +186,13 @@ nav#top-nav-bar {
 }
 
 .product-section-title {
+  text-transform: initial;
+  color: #808080;
   margin: 0;
+}
+
+[data-hook="product_show"] h6 {
+  font-size: 12pt;
 }
 
 .container .sixteen.columns {
@@ -273,6 +281,8 @@ ul#products li .price {
   float: left;
   margin-left: 10px;
 }
+
+
 
 footer#footer {
   border-top: 6px solid #bbb;
