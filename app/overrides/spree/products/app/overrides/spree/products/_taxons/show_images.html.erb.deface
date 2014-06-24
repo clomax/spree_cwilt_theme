@@ -1,7 +1,7 @@
 <!-- replace 'ul#similar_items_by_taxon' -->
 <% products = [] %>
+<% taxons = @product.taxons %>
 <% (1..4).each do %>
-  <% taxons = @product.taxons %>
   <% taxon = taxons.sample %>
   <% product = taxon.products.all.sample %>
   <% products.push(product) unless products.include?(product) or product.equal? @product%>
