@@ -7,11 +7,11 @@
   <% products.push(product) unless products.include?(product) or product.equal? @product%>
 <% end %>
 
-<ul id="#similar_items_by_taxon" data-hook>
+<ul class="similar_products_list" data-hook>
   <% products.each do |p| %>
     <% url = product_url(p, :taxon_id => @taxon.try(:id) ) %>
     <li>
-      <div class="product-image">
+      <div class="similar_product_image">
         <%= link_to small_image(p, :itemprop => "image"), url, :itemprop => 'url' %>
       </div>
     </li>
