@@ -4,8 +4,7 @@
 <% (1..4).each do %>
   <% taxon = taxons.sample %>
   <% product = taxon.products.all.sample %>
-  <%= product.id == @product.id %>
-  <% products.push(product) unless products.include?(product) or product.equal? @product%>
+  <% products.push(product) unless products.include?(product) or product.id == @product.id %>
 <% end %>
 
 <ul class="similar_products_list" data-hook>
