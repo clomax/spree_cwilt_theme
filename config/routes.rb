@@ -1,3 +1,3 @@
-Spree::Core::Engine.add_routes do
+Spree::Core::Engine.routes.prepend do
   get '/collections', to: 'collections#index'
 end
