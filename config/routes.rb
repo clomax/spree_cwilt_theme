@@ -1,3 +1,6 @@
 Spree::Core::Engine.routes.draw do
-  # Add your extension routes here
+end
+
+Spree::Core::Engine.routes.prepend do
+  get '/collections', to: 'collections#index'
 end
