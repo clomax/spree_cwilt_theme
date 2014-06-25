@@ -6,7 +6,6 @@
     <% Spree::Taxon.find_by(name: "Fabric").children.each do |child| %>
       <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/fabric/" + child.name.downcase.gsub(/\s+/,"-") %></li><br/>
     <% end %>
-    <li stlye="border-botom: 1px dashed #808080;">&nbsp;</li>
   </ul>
 </li>
 
