@@ -1,9 +1,11 @@
-class PagesController < ActionController::Base
+module Spree
+  class PagesController < ActionController::Base
 
-  def size_guide
+    def size_guide
+    end
+
+    def delivery
+    end
+
   end
-
-  def delivery
-  end
-
 end
