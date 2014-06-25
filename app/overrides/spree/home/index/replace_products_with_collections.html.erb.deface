@@ -1,4 +1,4 @@
 <!-- replace '[data-hook="homepage_products"]' -->
 <div data-hook="homepage_collections">
-  <%= render :partial => 'spree/shared/collections', :locals => { :collection => @products } %>
+  <%= render :partial => 'spree/shared/collections', :locals => { :collections => Spree::Taxon.find_by(name: "Collection").children.load } %>
 </div>
