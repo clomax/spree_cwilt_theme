@@ -1,9 +1,0 @@
-<% content_for :sidebar do %>
-  <div data-hook="taxon_sidebar_navigation">
-    <%= render :partial => 'spree/shared/taxonomies' %>
-  </div>
-<% end %>
-
-<div data-hook="collections">
-  <%= render :partial => 'spree/shared/collections', :locals => { :collections => @collections } %>
-</div>
