@@ -153,11 +153,16 @@ li.taxon-menu-item:hover ul {
   white-space: nowrap;
 }
 
-#link-to-cart {
+#nav-bar > li {
+  margin-left: 10px;
+  padding-left: 0px;
+}
+
+li #link-to-cart {
   background: url(<%= asset_path 'spree/frontend/custom_cart.png' %>);
   background-size: 20%;
   background-repeat: no-repeat;
-  padding-left: 25px;
+  padding-left: 25px !important;
 }
 
 nav #main-nav-bar li#link-to-cart a {
