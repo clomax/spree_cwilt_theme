@@ -18,9 +18,9 @@ function startSlider() {
       index = 1;
     }
 
-    $("#showcase_inner_container > img#1").css("transform", "translateX(" + (index * 663) + "px)");
+    $("#showcase_inner_container > img#" + index + ").css("transform", "translateX(" + (index * 663) + "px)");
     index = next;
     next = next + 1;
 
-  }, 1000);
+  }, 2000);
 }
