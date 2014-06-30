@@ -14,7 +14,7 @@ function startSlider() {
 
   loop = setInterval( function() {
     if(next == count+1) {
-      next = 0;
+      next = 1;
       index = 0;
     }
 
