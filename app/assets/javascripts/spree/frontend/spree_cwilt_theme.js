@@ -3,7 +3,7 @@
 
 $(window).load(function() {
   function loop() {
-    $("#showcase_inner_container").css("transform", "translateX("+$(this).index() * -663+"px)");
+    $("#showcase_inner_container").css("transform", "translateX("+$(this).index() * 663+"px)");
   };
   setInterval( loop, 1000 );
 });
