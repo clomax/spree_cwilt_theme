@@ -1,4 +1,4 @@
-<!-- insert_before '[data-hook="homepage_products"]' -->
+<!-- insert_before '[data-hook="homepage_collections"]' -->
 <div id="showcase" class="showcase">
   <div id="showcase_inner_container" style="width: 6630px;">
     <% (1..10).each do |i| %>
