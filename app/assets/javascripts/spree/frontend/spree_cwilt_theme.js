@@ -18,7 +18,7 @@ function startSlider() {
       index = 1;
     }
 
-    $("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
+    $("#showcase_inner_container > img#" + index).css("transform", "translateX(" + -663 + "px)");
     index = next;
     next = next + 1;
 
