@@ -13,7 +13,7 @@ function startSlider() {
   count = $("#showcase_inner_container > img").size();
 
   loop = setInterval( function() {
-    if(next == count) {
+    if(next == count+1) {
       next = 0;
       index = 0;
     }
