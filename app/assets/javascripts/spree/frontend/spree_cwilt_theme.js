@@ -23,5 +23,5 @@ function startSlider() {
     index = next;
     next = next + 1;
 
-  }, 2000);
+  }, 3000);
 }
