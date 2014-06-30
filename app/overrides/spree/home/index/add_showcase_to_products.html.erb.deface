@@ -1,8 +1,8 @@
 <!-- insert_before '[data-hook="homepage_collections"]' -->
 <div id="showcase" class="showcase">
   <div id="showcase_inner_container" style="width: 6630px;">
-    <% (1..10).each do |i| %>
-      <img style="float:left;" src="http://s3-eu-west-1.amazonaws.com/cwilt/slideshow/#{i.to_a}.png" />
+    <% (1..10).to_a.each do |i| %>
+      <img style="float:left;" src="http://s3-eu-west-1.amazonaws.com/cwilt/slideshow/#{i}.png" />
     <% end %>
   </div>
 </div>
