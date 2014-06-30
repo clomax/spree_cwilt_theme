@@ -1,5 +1,5 @@
 <!-- insert_before '[data-hook="homepage_products"]' -->
-<div id=\"showcase\" class=\"showcase\">
+<div id="showcase" class="showcase">
   <div id="showcase_inner_container" style="width: 6630px;">
     <% (1..10).each do |i| %>
       <img style="float:left;" src="https://s3-eu-west-1.amazonaws.com/cwilt/slideshow/#{i}.png" />
