@@ -6,4 +6,5 @@ $(window).load(function() {
     $("#showcase_inner_container").css("transform", "translateX("+$(this).index() * 663+"px)");
     setTimeout(loop, 1000);
   };
+  setTimeout(loop,1000);
 });
