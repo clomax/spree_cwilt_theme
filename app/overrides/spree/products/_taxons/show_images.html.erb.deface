@@ -14,6 +14,7 @@
       <div class="similar_product_image">
         <%= link_to small_image(p, :itemprop => "image"), url, :itemprop => 'url' %>
       </div>
+      <%= link_to truncate(p.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => product.name %>
     </li>
   <% end %>
 </ul>
