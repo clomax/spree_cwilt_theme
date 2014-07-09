@@ -14,7 +14,7 @@
       <div class="similar_product_image">
         <%= link_to small_image(p, :itemprop => "image"), url, :itemprop => 'url' %>
         <%= link_to truncate(p.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => p.name %>
-        <span><%= p.variants.first.price %></span>
+        <span itempprop="price" ><%= p.variants.first.price %></span>
       </div>
     </li>
   <% end %>
