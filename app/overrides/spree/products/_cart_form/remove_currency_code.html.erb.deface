@@ -1,2 +1,0 @@
-<!-- replace 'erb[loud]:contains("display_price(@product)")' -->
-<%= number_with_precision(@product.price) %>
