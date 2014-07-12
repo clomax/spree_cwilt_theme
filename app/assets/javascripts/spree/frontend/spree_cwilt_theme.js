@@ -13,6 +13,7 @@ function slider() {
   count = $("#showcase_inner_container > img").size();
   document.getElementById("showcase_inner_container").className = "showcase_img";
   $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
+  delay = 5000;
 
   if (index == count) {
     index = 0;
@@ -22,7 +23,6 @@ function slider() {
   }
 
   console.log(index + " : " + (index * -663) + "px  :  " + delay + "    count: " + count);
-  delay = 5000;
   index += 1;
 }
 
