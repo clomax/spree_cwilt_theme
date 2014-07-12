@@ -25,7 +25,7 @@ function slider() {
     delay = 5000;
   }
 
-  console.log(index + " : " + (index * -663) + "px  :  " + delay);
+  console.log(index + " : " + (index * -663) + "px  :  " + delay + "    count: " + count);
   index += 1;
 }
 
