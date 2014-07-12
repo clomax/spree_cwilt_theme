@@ -19,6 +19,8 @@ function startSlider() {
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
     index += 1;
 
+    console.log(index);
+
     if (index == count) {
       index = 1;
       $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
