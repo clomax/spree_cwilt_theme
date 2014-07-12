@@ -14,18 +14,14 @@ function startSlider() {
   images = $("#showcase_inner_container > img");
   count = images.size();
 
-  for (i=0; i<count; i++) {
-    console.log(images[i]);
-  }
-
   loop = setInterval( function() {
     $("#showcase_inner_container > img").css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
     index += 1;
 
     if (index == count) {
-      var images_clone = images.cloneNode(true);
       console.log("images_clone:" + images_clone);
+      var images_clone = images.cloneNode(true);
       images.parentNode.reokaceChild(images_clone, images);
       index = 0;
     }
