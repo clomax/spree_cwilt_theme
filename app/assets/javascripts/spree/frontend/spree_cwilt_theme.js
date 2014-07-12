@@ -19,7 +19,7 @@ function startSlider() {
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
     index += 1;
 
-    console.log(index);
+    console.log(index + " : " + (index * -663) + "px");
 
     if (index == count) {
       index = 1;
