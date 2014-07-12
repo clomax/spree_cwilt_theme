@@ -7,7 +7,7 @@ var timer;
 
 $(document).ready(function() {
   slider();
-  repeat();
+  setTimeout(slider(), 5000);
 });
 
 function slider() {
