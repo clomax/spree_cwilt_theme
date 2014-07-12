@@ -15,7 +15,6 @@ function startSlider() {
   count = images.size() + 1;
 
   loop = setInterval( function() {
-    console.log(index + " : " + (index * -663) + "px");
     $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
 
@@ -26,6 +25,7 @@ function startSlider() {
       document.getElementById("showcase_inner_container").className = "showcase_img";
     }
 
+    console.log(index + " : " + (index * -663) + "px");
     index += 1;
 
   }, 5000);
