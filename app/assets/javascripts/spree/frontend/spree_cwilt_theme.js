@@ -11,6 +11,7 @@ $(document).ready(function() {
 
 function slider() {
   count = $("#showcase_inner_container > img").size();
+  delay = 5000;
   document.getElementById("showcase_inner_container").className = "showcase_img";
   $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
 
@@ -19,7 +20,6 @@ function slider() {
     delay = 0;
     document.getElementById("showcase_inner_container").className = "showcase_img_reset";
     $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
-    delay = 5000;
   }
 
   console.log(index + " : " + (index * -663) + "px  :  " + delay + "    count: " + count);
