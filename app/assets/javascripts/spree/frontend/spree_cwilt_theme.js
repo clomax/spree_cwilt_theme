@@ -6,7 +6,7 @@ var delay = 5000;
 var timer;
 
 $(document).ready(function() {
-  setTimeout(repeat, delay);
+  slider();
   repeat();
 });
 
