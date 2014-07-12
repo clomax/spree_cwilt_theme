@@ -4,6 +4,6 @@
     <% (0..2).to_a.each do |i| %>
       <img id="<%= i %>" class="showcase_img" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= i %>.png" />
     <% end %>
-      <img id="<%= 0 %>" class="showcase_img" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= i %>.png" />
+      <img id="<%= 0 %>" class="showcase_img" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= 0 %>.png" />
   </div>
 </div>
