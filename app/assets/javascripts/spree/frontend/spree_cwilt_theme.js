@@ -13,10 +13,11 @@ $(document).ready(function() {
 function startSlider() {
   count = $("#showcase_inner_container > img").size();
 
+  console.log($("#showcase_inner_container > img")[0]);
+
   loop = setInterval( function() {
     $("#showcase_inner_container > img").css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
-    //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * 663) + "px)");
     index += 1;
 
   }, 5000);
