@@ -21,7 +21,7 @@ function startSlider() {
 
     if (index == count) {
       console.log(document.getElementById("showcase_inner_container"));
-      document.getElementById("showcase_inner_container").className("showcase_images");
+      document.getElementById("showcase_inner_container > img").className("showcase_images");
       index = 0;
     }
 
