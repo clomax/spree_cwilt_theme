@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 function startSlider() {
   images = $("#showcase_inner_container > img");
-  count = images.size() + 1;
+  count = images.size();
 
   loop = setInterval( function() {
     $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
