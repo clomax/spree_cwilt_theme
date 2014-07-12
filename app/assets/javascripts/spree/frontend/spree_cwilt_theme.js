@@ -23,5 +23,10 @@ function startSlider() {
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
     index += 1;
 
+    if (index == count) {
+      images.style.left = '0px';
+      index = 0;
+    }
+
   }, 5000);
 }
