@@ -22,6 +22,7 @@ function startSlider() {
 
     if (index == count) {
       index = 1;
+      document.getElementById("showcase_inner_container").className = "showcase_img_reset";
       $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
     }
 
