@@ -20,6 +20,7 @@ function startSlider() {
     index += 1;
 
     if (index == count) {
+      console.log(document.getElementById("showcase_inner_container"));
       document.getElementById("showcase_inner_container").className("showcase_images");
       index = 0;
     }
