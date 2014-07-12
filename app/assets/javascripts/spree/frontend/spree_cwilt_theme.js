@@ -15,6 +15,7 @@ function startSlider() {
   count = images.size();
 
   loop = setInterval( function() {
+    document.getElementById("showcase_inner_container").className = "showcase_img";
     $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
 
@@ -22,7 +23,6 @@ function startSlider() {
       index = 0;
       document.getElementById("showcase_inner_container").className = "showcase_img_reset";
       $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
-      document.getElementById("showcase_inner_container").className = "showcase_img";
     }
 
     console.log(index + " : " + (index * -663) + "px");
