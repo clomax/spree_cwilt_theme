@@ -1,7 +1,7 @@
 <!-- insert_before '[data-hook="homepage_collections"]' -->
 <div id="showcase" class="showcase">
   <div id="showcase_inner_container">
-    <% (0..9).to_a.each do |i| %>
+    <% (0..2).to_a.each do |i| %>
       <img id="<%= i %>" class="showcase_img" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= i %>.png" />
     <% end %>
   </div>
