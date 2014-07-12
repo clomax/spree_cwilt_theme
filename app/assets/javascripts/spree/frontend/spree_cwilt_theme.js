@@ -20,7 +20,7 @@ function startSlider() {
     index += 1;
 
     if (index == count) {
-      index = 0;
+      index = 1;
       $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
     }
 
