@@ -2,12 +2,11 @@
 // the installer will append this file to the app vendored assets here: vendor/assets/javascripts/spree/frontend/all.js'
 
 $(document).ready(function() {
-  slider();
+  repeat();
 });
 
 var index = 1;
 var images = $("#showcase_inner_container > img");
-var showcase = document.getElementById("showcase_inner_container");
 var count = images.size();
 var delay = 5000;
 var timer;
@@ -15,13 +14,13 @@ var timer;
 console.log(images);
 
 function slider() {
-  showcase.className = "showcase_img";
+  document.getElementById("showcase_inner_container").className = "showcase_img";
   $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
 
   if (index == count) {
     index = 0;
     delay = 0;
-    showcase.className = "showcase_img_reset";
+    document.getElementById("showcase_inner_container").className = "showcase_img_reset";
     $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
     delay = 5000;
   }
@@ -32,5 +31,5 @@ function slider() {
 
 (function repeat() {
   slider();
-  timer = setTimeout(repeat, delay);
+  setTimeout(repeat, delay);
 })();
