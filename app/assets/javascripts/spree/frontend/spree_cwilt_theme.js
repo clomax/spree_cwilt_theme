@@ -11,6 +11,8 @@ var count = images.size();
 var delay = 5000;
 var timer;
 
+console.log(images);
+
 function slider() {
   document.getElementById("showcase_inner_container").className = "showcase_img";
   $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
