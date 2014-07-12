@@ -14,8 +14,8 @@ function startSlider() {
   images = $("#showcase_inner_container > img");
   count = images.size();
 
-  for (var i in images) {
-    console.log(i);
+  for (i=0; i<count; i++) {
+    console.log(images[i]);
   }
 
   loop = setInterval( function() {
