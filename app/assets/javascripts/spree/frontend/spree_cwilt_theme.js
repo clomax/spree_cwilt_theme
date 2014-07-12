@@ -15,7 +15,7 @@ function slider() {
   document.getElementById("showcase_inner_container").className = "showcase_img";
   $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
 
-  if (index == count) {
+  if (index == count-1) {
     index = 0;
     delay = 0;
     document.getElementById("showcase_inner_container").className = "showcase_img_reset";
