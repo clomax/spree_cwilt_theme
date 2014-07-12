@@ -20,9 +20,8 @@ function startSlider() {
     index += 1;
 
     if (index == count) {
-      console.log(document.getElementById("showcase_inner_container"));
-      document.getElementById("showcase_inner_container > img").className("showcase_images");
       index = 0;
+      $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
     }
 
   }, 5000);
