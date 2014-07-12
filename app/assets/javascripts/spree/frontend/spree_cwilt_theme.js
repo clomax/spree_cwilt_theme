@@ -18,7 +18,6 @@ function startSlider() {
     console.log(index + " : " + (index * -663) + "px");
     $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
-    index += 1;
 
     if (index == count) {
       index = 0;
@@ -26,6 +25,8 @@ function startSlider() {
       $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
       document.getElementById("showcase_inner_container").className = "showcase_img";
     }
+
+    index += 1;
 
   }, 5000);
 }
