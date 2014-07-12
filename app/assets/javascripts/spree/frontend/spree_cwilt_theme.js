@@ -15,13 +15,12 @@ function startSlider() {
   count = images.size();
 
   loop = setInterval( function() {
-     document.getElementById("showcase_inner_container").className("showcase_images") w
     $("#showcase_inner_container > img").css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
     index += 1;
 
     if (index == count) {
-      document.getElementById("showcase_inner_container").className("showcase_images_reset") w
+     document.getElementById("showcase_inner_container").className("showcase_images") w
       index = 0;
     }
 
