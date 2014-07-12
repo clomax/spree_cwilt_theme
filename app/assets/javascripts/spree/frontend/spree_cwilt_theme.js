@@ -24,7 +24,9 @@ function startSlider() {
     index += 1;
 
     if (index == count) {
-      $("#showcase_inner_container > img").removeClass("showcase_img").addClass("showcase_img");
+      var images_clone = images.cloneNode(true);
+      console.log("images_clone:" + images_clone);
+      images.parentNode.reokaceChild(images_clone, images);
       index = 0;
     }
 
