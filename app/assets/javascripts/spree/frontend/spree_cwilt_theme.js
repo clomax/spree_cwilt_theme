@@ -15,7 +15,6 @@ function startSlider() {
 
   loop = setInterval( function() {
     $("#showcase_inner_container > img").css("transform", "translateX(" + (index * -663) + "px)");
-    //$("#showcase_inner_container > img").css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * -663) + "px)");
     //$("#showcase_inner_container > img#" + index).css("transform", "translateX(" + (index * 663) + "px)");
     index += 1;
