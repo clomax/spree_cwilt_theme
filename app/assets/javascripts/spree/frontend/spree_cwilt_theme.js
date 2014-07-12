@@ -24,7 +24,7 @@ function startSlider() {
     index += 1;
 
     if (index == count) {
-      images.style.left = '0px';
+      $("#showcase_inner_container > img").removeClass("showcase_img").addClass("showcase_img");
       index = 0;
     }
 
