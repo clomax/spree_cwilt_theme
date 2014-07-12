@@ -29,7 +29,7 @@ function slider() {
   index += 1;
 }
 
-(function repeat() {
+function repeat() {
   slider();
   setTimeout(repeat, delay);
-})();
+}
