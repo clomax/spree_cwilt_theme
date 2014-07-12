@@ -1,15 +1,16 @@
 // Placeholder manifest file.
 // the installer will append this file to the app vendored assets here: vendor/assets/javascripts/spree/frontend/all.js'
 
+var index = 1;
+var delay = 5000;
+var timer;
+
 $(document).ready(function() {
-  var index = 1;
-  var delay = 5000;
-  var timer;
-  var count = $("#showcase_inner_container > img").size();
   repeat();
 });
 
 function slider() {
+  count = $("#showcase_inner_container > img").size();
   document.getElementById("showcase_inner_container").className = "showcase_img";
   $("#showcase_inner_container").css("transform", "translateX(" + (index * -663) + "px)");
 
