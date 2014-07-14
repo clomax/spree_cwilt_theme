@@ -7,6 +7,10 @@
   <% products.push(product) unless products.include?(product) or product.id == @product.id %>
 <% end %>
 
+<% unless products.length == 0 %>
+  <h6 class="product-section-title">You may also like:</h6>
+<% end %>
+
 <ul class="similar_products_list" data-hook>
   <% products.each do |p| %>
     <% url = product_url(p, :taxon_id => @taxon.try(:id) ) %>

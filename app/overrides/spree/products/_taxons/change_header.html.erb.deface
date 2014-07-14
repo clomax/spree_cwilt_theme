@@ -1,2 +1,1 @@
-<!-- replace 'erb[loud]:contains(":look_for_similar_items")' -->
-You may also like:
+<!-- remove 'erb[loud]:contains(":look_for_similar_items")' -->
