@@ -1,2 +1,0 @@
-<!-- insert_after 'div#cart-form' -->
-<%= render :partial => 'properties' %>
