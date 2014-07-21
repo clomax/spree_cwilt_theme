@@ -31,7 +31,6 @@
   padding:0;
   margin:0;
   float: left;
-  border: initial !important;
 }
 
 html {
@@ -269,7 +268,10 @@ div #content #page_content {
 
 div #content img {
   display: block;
-  border: 1px solid #808080;
+}
+
+div #content img:not(.showcase_image) {
+  border: 1 solid #808080;
 }
 
 div #product-properties {

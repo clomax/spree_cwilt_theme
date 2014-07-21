@@ -2,8 +2,8 @@
 <div id="showcase" class="showcase">
   <div id="showcase_inner_container" class="showcase_img">
     <% (0..9).to_a.each do |i| %>
-      <img id="<%= i %>" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= i %>.png" />
+      <img class="showcase_image" id="<%= i %>" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= i %>.png" />
     <% end %>
-      <img id="<%= 0 %>" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= 0 %>.png" />
+      <img class="showcase_image" id="<%= 0 %>" src="http://s3-eu-west-1.amazonaws.com/cwilt/assets/slideshow/<%= 0 %>.png" />
   </div>
 </div>
