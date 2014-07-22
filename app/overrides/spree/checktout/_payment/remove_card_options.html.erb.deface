@@ -1,4 +1,4 @@
-<!-- replace .card_options -->
+<!-- replace ".card_options" -->
 <div class="card_options">
     <input id="use_existing_card_no" name="use_existing_card" type="radio" value="yes" style="display:none">
 </div>
