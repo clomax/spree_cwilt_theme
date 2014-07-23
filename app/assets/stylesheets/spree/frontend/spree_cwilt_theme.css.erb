@@ -123,6 +123,7 @@ h1:not(.page-title) {
   padding-bottom: 7px;
   font-family: georgia;
   font-weight: initial !important;
+  letter-spacing: 0.05em;
 }
 
 .container .column, .container .columns {
@@ -245,6 +246,7 @@ li.taxon-menu-item:hover ul {
 .static_page_image {
   display: block;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 #link-to-cart {
@@ -328,7 +330,9 @@ ul#main-nav-bar li.taxon-menu-item {
 
 nav#top-nav-bar {
   float: right;
-  width: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -130px;
 }
 
 .no-bottom-border {
@@ -458,8 +462,7 @@ ul#products li .price {
 }
 
 figure {
-  width: 550px !important;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 figure img {
