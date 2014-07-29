@@ -1,2 +1,2 @@
-<!-- insert_after 'erb[loud]:contains("<%= line_item.display_amount.to_html unless line_item.quantity.nil? %>")' -->
+<!-- insert_after 'erb[loud]:contains("line_item.display_amount.to_html unless line_item.quantity.nil?")' -->
 inc. VAT
