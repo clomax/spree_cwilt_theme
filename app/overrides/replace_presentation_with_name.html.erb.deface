@@ -1,5 +1,0 @@
-Deface::Override.new(virtual_path: "spree/admin/prototypes/show",
-                     name: "replace_presentation_with_name",
-                     replace: "erb[loud]:contains('label_tag \"option_value_#{ov.id}\", ov.presentation')",
-                     text: "<%= label_tag "option_value_#{ov.id}", ov.name %>",
-                     disabled: false)
