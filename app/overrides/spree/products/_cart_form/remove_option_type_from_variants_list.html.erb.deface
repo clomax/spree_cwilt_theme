@@ -1,2 +1,2 @@
 <!-- replace 'erb[loud]:contains("variant_options variant")' -->
-<%= variant.option_values.first.name %>
+<%= variant.option_values.first.presentation %>
