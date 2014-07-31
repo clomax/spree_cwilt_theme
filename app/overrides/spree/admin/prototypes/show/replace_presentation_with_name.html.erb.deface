@@ -1,0 +1,2 @@
+<!-- replace "erb[loud]:contains('label_tag "option_value_#{ov.id}", ov.presentation')" -->
+label_tag "option_value_#{ov.id}", ov.name
