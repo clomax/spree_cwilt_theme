@@ -227,6 +227,10 @@ li.taxon-menu-item:hover ul {
   font-family: verdana !important;
 }
 
+.flash.notice, .notice.errorExplanation {
+  background-color: #0b999f;
+}
+
 #order_summary > legend:nth-child(1) {
   color: #808080;
   font-size: 13pt;
@@ -240,8 +244,34 @@ li.taxon-menu-item:hover ul {
   border: 1px solid #808080
 }
 
+#paypal_button img {
+  margin-left: 0px !important;
+}
+
+.subtaxon-title a {
+  color: #808080;
+}
+
 .similar_product_image img {
   border: 1px solid #808080
+}
+
+table thead {
+  background-color: #0B999F !important;
+  color: #FFF !important;
+}
+
+span.price,
+#checkout-summary table tr[data-hook="item_total"] td:last-child strong,
+#checkout-summary table #summary-order-total,
+#order_details td.price span,
+#order_details td.total span,
+#order_summary td.price span,
+#order_summary td.total span,
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_price"],
+table#cart-detail tbody#line_items tr td[data-hook="cart_item_total"],
+div[data-hook="inside_cart_form"] #subtotal span.order-total {
+  color: #808080 !important
 }
 
 #nav-bar > li {
