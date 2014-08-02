@@ -1,7 +1,7 @@
 <!-- replace 'li#home-link' -->
 <li id="home-link" class="taxon-menu-item" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
 
-<li id="fabrics-link" class="taxon-menu-item">     <%= link_to "Fabric",       spree.root_path + "t/fabric" %>
+<li id="fabrics-link" class="taxon-menu-item">  Fabric
   <ul class="subtaxon-menu">
     <% Spree::Taxon.find_by(name: "Fabric").children.each do |child| %>
       <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/fabric/" + child.name.downcase.gsub(/\s+/,"-") %></li><br/>
@@ -10,7 +10,7 @@
   </ul>
 </li>
 
-<li id="haberdashery-link" class="taxon-menu-item"><%= link_to "Haberdashery", spree.root_path + "t/haberdashery" %>
+<li id="haberdashery-link" class="taxon-menu-item">  Haberdashery
   <ul class="subtaxon-menu">
     <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
       <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/haberdashery/" + child.name.downcase.gsub(/\s+/,"-") %></li><br/>
