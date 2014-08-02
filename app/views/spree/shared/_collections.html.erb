@@ -7,7 +7,7 @@
     <% if collection.products.any? %>
     <li id="product_<%= collection.id %>" class="columns three <%= cycle("alpha", "secondary", "", "omega secondary", :name => "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
       <div class="product-image">
-        <%= link_to small_image(collection.products.first, :itemprop => "image", :protocol => "https"), url, :itemprop => 'url' %>
+        <%= link_to small_image(collection.products.first, :itemprop => "image"), url, :itemprop => 'url' %>
       </div>
       <%= link_to collection.name, url %>
     </li>
