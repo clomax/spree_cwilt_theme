@@ -1,4 +1,4 @@
 <!-- surround 'erb[loud]:contains("product_image")' -->
-<a href="<%= original_image(@product, :itemprop => "image") %>" data-lightbox="main-image">
+<a href="<%= large_image(@product, :itemprop => "image") %>" data-lightbox="main-image">
   <%= render_original %>
 </a>
