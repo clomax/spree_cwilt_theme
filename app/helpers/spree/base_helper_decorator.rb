@@ -17,7 +17,7 @@ module Spree
     private
 
     def create_product_image_url(image, product, options, style)
-      options.reverse_image! alt: image.alt.blank? product.name : image.alt
+      options.reverse_image! alt: image.alt.blank ? product.name : image.alt
       image.attachment.url(style), options
     end
 
