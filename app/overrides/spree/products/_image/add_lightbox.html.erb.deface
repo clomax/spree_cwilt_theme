@@ -1,4 +1,0 @@
-<!-- surround 'erb[loud]:contains("product_image")' -->
-  <% link_to "https://s3-eu-west-1.amazonaws.com/cwilt/products/16-dutch_heritage_1025_red/original/dutch_heritage_1025_red.png", :rel => "lightbox" do %>
-    <%= render_original %>
-  <% end %>
