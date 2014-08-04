@@ -1,4 +1,4 @@
 <!-- surround 'erb[loud]:contains("product_image")' -->
-<%= link_to large_image(@product, :itemprop => "image").url.html_safe, :rel => "lightbox", :data-lightbox => "main-image" %>
+<%= link_to image_tag(@product.images[0].attachment.url(:original)), :rel => "lightbox" %>
   <%= render_original %>
 <% end %>
