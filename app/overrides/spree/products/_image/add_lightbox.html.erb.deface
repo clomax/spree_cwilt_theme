@@ -1,0 +1,4 @@
+<!-- surround 'erb[loud]:contains("image_tag")' -->
+<a href="<%= image.attachment.url(:original) %>" data-lightbox="main-image">
+  <%= render_original %>
+</a>
