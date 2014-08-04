@@ -1,0 +1,3 @@
+<!-- surround 'erb[loud]:contains("product_image")' -->
+  <%= @product %>
+  <%= render_original %>
