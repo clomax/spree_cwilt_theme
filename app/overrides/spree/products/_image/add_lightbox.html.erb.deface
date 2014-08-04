@@ -1,3 +1,4 @@
 <!-- surround 'erb[loud]:contains("product_image")' -->
-  <%= @product %>
-  <%= render_original %>
+  <% link_to "lightbox-main-image", original_image_url(@product), "data-lightbox" => "main-image" do %>
+    <%= render_original %>
+  <% end %>
