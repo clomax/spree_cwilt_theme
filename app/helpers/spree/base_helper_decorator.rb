@@ -26,7 +26,7 @@ module Spree
         options = options.first || {}
         if product.images.empty?
           if !product.is_a?(Spree::Variant) && !product.variant_images.empty?
-            create_product_image_url(product.variant_images.first, product, options style)
+            create_product_image_url(product.variant_images.first, product, options, style)
           else
             if product.is_a?(Variant) && !product.product.variant_images.empty?
               create_product_image_url(product.product.variant_images.first, product, options, style)
