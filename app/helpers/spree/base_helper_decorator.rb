@@ -1,5 +1,4 @@
-module Spree
-  module BaseHelper
+Spree::BaseHelper.module_eval do
 
     def taxons_tree(root_taxon, current_taxon, max_level = 1)
       return '' if max_level < 1 || root_taxon.children.empty?
@@ -38,5 +37,4 @@ module Spree
       end
     end
 
-  end
 end
