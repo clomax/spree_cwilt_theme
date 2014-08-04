@@ -30,12 +30,10 @@ module Spree
           else
             if product.is_a?(Variant) && !product.product.variant_images.empty?
               create_product_image_url(product.product.variant_images.first, product, options, style)
-            else
-              # i dunno lol
             end
-          else
-            create_product_image_url(product.images.first, product, options, style)
           end
+        else
+          create_product_image_url(product.images.first, product, options, style)
         end
       end
     end
