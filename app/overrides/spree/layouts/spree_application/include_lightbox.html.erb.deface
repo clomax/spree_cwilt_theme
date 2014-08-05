@@ -1,0 +1,2 @@
+<!-- insert_after 'erb[loud]:contains("analytics") ' -->
+<script src="/assets/lightbox.min.js"></script>
