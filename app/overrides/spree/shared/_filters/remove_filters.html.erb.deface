@@ -1,0 +1,2 @@
+<!-- remove 'erb[silent]:contains("unless filters.empty?")' -->
+
