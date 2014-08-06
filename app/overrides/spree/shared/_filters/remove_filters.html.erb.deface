@@ -1,2 +1,2 @@
-<!-- remove 'erb[silent]:contains("unless filters.empty?")' -->
+<!-- remove 'erb[silent]:contains("unless filters.empty?")' closing_selector 'erb[silent]:contains("end") -->
 
