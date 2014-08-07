@@ -1,2 +1,2 @@
-<!-- insert_bottom '[data-hook="product_show"]' -->
+<!-- insert_after '[data-hook="product_show"]' -->
 <%= render :partial => 'taxons' %>
