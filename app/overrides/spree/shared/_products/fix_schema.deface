@@ -1,2 +1,0 @@
-add_to_attributes 'div#product-price'
-attributes :itemtype => 'http://schema.org/Offer'
