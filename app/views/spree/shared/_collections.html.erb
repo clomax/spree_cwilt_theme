@@ -5,7 +5,7 @@
   <% collections.each do |collection| %>
     <% url = "t/fabric/collection/#{collection.name}".downcase.gsub(/\s+/, "-") %>
     <% if collection.products.any? %>
-    <li id="product_<%= collection.id %>" class="columns three <%= cycle("alpha", "secondary", "", "omega secondary", :name => "classes") %>" data-hook="products_list_item">
+    <li id="product_<%= collection.id %>" class="columns three <%= cycle("alpha", "secondary", "", "omega secondary", :name => "classes") %>" >
       <div class="product-image">
         <%= link_to small_image(collection.products.first, :itemprop => "image"), url, :itemprop => 'url' %>
       </div>
