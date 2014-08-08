@@ -1,2 +1,2 @@
 <!-- insert_after 'erb[loud]:contains("analytics")' -->
-<script src="/assets/lightbox.min.js"></script>
+<script src="/assets/spree/frontend/lightbox.min.js"></script>
