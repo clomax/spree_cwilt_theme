@@ -1,14 +1,4 @@
 <!-- surround 'erb[loud]:contains("product_image")' -->
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#main-image').magnificPopuip({
-        delegate: 'a',
-        type: 'image'
-      });
-    });
-  </script>
-
   <%= link_to(create_product_image_url(@product.images.first, @product, {}, :original) do %>
     <%= render_original %>
   <% end %>
