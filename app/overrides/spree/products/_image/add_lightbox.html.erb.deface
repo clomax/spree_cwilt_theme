@@ -1,4 +1,4 @@
 <!-- surround 'erb[loud]:contains("product_image")' -->
-  <%= link_to(create_product_image_url(@product.images.first, @product, {}, :original), :'data-lightbox' => "main-image") do %>
+  <%= link_to(create_product_image_url(@product.images.first, @product, {}, :original) do %>
     <%= render_original %>
   <% end %>
