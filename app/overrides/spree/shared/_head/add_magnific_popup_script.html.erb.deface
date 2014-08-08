@@ -1,3 +1,4 @@
+<!-- insert_bottom 'head'-->
 <% content_for :head dp %>
   <script type='text/javascript'>
     $(document).ready(function () {
