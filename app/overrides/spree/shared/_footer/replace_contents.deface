@@ -5,9 +5,9 @@ Deface::Override.new(
   :text         =>
     "<div id=\"contents\">
        <h2>CONTACT</h2>
-       CONTACT INFORMATION<br/>
-       GOES HERE<br/>
-       07123456789
+        Diane Lomax<br/>
+        diane@cwilt.co.uk<br/>
+        07984519887
      </div>",
   :name         => "replace_contents"
 )
