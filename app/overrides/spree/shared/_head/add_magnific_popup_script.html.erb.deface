@@ -1,4 +1,4 @@
-<!-- insert_bottom 'head'-->
+<!-- insert_after 'meta'-->
 <% content_for :head dp %>
   <script type='text/javascript'>
     $(document).ready(function () {
