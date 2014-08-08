@@ -1,4 +1,4 @@
-<!-- insert_after 'meta' -->
+<!-- insert_bottom 'head' -->
 <meta name="google-site-verification" content="lbB5WXf0K3FXVemEpoUAhidewA1W7MpNnEa3A6WuwwQ" />
 <script type='text/javascript'>
   $(document).ready(function () {
