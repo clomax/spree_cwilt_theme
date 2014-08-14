@@ -7,7 +7,7 @@ Deface::Override.new(
        <h2>CONTACT</h2>
         Diane Lomax<br/>
         diane@cwilt.co.uk<br/>
-        07984519887
+        (+44)7580 896530
      </div>",
   :name         => "replace_contents"
 )
