@@ -4,9 +4,9 @@
 var index = 1;
 
 $(document).ready(function() {
-  //if (window.location.pathname == "/") {
+  if (window.location.pathname == "/") {
     startSlider();
-  //}
+  }
 });
 
 
