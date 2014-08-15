@@ -535,10 +535,6 @@ ul .taxons_list {
   border-bottom: 1px dashed #808080;
 }
 
-ul#main-nav-bar li.taxon-menu-item a {
-  font-size: 15pt;
-}
-
 ul#main-nav-bar li.subtaxon-menu-item a {
   font-size: 9pt;
 }
@@ -674,12 +670,12 @@ div#copyright {
 /* MEDIA QUERIES */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
-  #content {
-    width: 463px;
-  }
-
-  .showcase {
-    width: 463px;
+  #content                    { width: 463px; }
+  .showcase                   { display: none !important; }
+  .container .eight.columns   { width: 200px; }
+  .taxon-menu-item            {
+    max-width: unset !important;
+    font-size: 12pt !important;
   }
 
 }
