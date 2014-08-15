@@ -1,4 +1,4 @@
-<!-- insert_after 'div#rightmost' -->
+<!-- insert_bottom 'footer#footer' -->
 <div id="copyright">
   &copy; copyright 2014 Cwilt
 </div>
