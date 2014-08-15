@@ -6,7 +6,7 @@
     <% Spree::Taxon.find_by(name: "Fabric").children.each do |child| %>
       <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/fabric/" + child.name.downcase.gsub(/\s+/,"-") %></li><br/>
     <% end %>
-    <li>- - - - - - - - - - - - - - - - -</li>
+    <li>- - - - - - - - - -</li>
   </ul>
 </li>
 
@@ -15,7 +15,7 @@
     <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
       <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/haberdashery/" + child.name.downcase.gsub(/\s+/,"-") %></li><br/>
     <% end %>
-    <li>- - - - - - - - - - - - - - - - -</li>
+    <li>- - - - - - - - - - - - - -</li>
   </ul>
 </li>
 
