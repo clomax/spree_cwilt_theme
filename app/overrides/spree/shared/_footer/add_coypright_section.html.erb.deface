@@ -1,0 +1,4 @@
+<!-- insert_after 'div#rightmost' -->
+<div id="copyright">
+  &copy; copyright 2014 Cwilt
+</div>
