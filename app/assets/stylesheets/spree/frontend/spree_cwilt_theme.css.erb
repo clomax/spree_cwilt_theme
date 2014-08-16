@@ -685,25 +685,25 @@ nav #main-nav-bar li a {
   .container .six.columns     { width: 500px; }
   .container .three.columns   { width: 146px; }
   .taxon-menu-item            {
-    max-width: unset !important;
+    max-width: initial !important;
     font-size: 12pt !important;
   }
   #product-properties         { width: 315px; }
 
   .similar_product_image      { width: 100px; }
-  .similar_product_image img  { max-width: 100px }
+  .similar_product_image img  { max-width: 100px; }
 
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  aside#sidebar               { display: none }
+  aside#sidebar               { display: none; }
   .showcase                   { display: none !important; }
-  ul#main-nav-bar li.taxon-menu-item { font-size: 9pt }
-  ul#main-nav-bar { width: 100px }
+  ul#main-nav-bar li.taxon-menu-item { font-size: 9pt; }
+  ul#main-nav-bar { width: 100px; }
 
   .page-title { font-size: 16pt; width: 275px; text-align: center; }
 
-  footer div#contents { font-size: 8pt !important; margin-left: 10px }
+  footer div#contents { font-size: 8pt !important; margin-left: 10px; }
   .container .eight.columns { max-width: 33.333%; }
 
     span[id="switcher"] {
@@ -714,5 +714,5 @@ nav #main-nav-bar li a {
       width: 100px !important;
       height: 50px !important;
     }
-    img[id=paypal] { display: none !important }
+    tr#paypal-row img { display: none !important; }
 }
