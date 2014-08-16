@@ -696,5 +696,23 @@ nav #main-nav-bar li a {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  aside#sidebar { display: none }
+  aside#sidebar               { display: none }
+  .showcase                   { display: none !important; }
+  ul#main-nav-bar li.taxon-menu-item { font-size: 9pt }
+  ul#main-nav-bar { width: 100px }
+
+  .page-title { font-size: 16pt; width: 275px; text-align: center; }
+
+  footer div#contents { font-size: 8pt !important; margin-left: 10px }
+  .container .eight.columns { max-width: 33.333%; }
+
+    span[id="switcher"] {
+      display: block;
+      background-image: url(https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png) !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      width: 100px !important;
+      height: 50px !important;
+    }
+    img[id=paypal] { display: none !important }
 }
