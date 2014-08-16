@@ -1,6 +1,0 @@
-<!-- surround '#paypal' -->
-<span id="switcher">
-  <%= render_original %>
-</span>
-
-

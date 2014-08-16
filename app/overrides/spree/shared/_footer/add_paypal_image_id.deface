@@ -1,5 +1,0 @@
-add_to_attributes '#paypal-row td a img'
-attributes :id => "paypal"
-
-//*[@id="paypal-row"]/td/a/img
-
