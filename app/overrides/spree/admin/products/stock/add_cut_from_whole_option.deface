@@ -1,0 +1,4 @@
+insert_before '#add_stock_form'
+<div id="add_cuttings_form">
+  <%= render 'set_stock_mode' %>
+</div>
