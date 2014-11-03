@@ -1,4 +1,4 @@
 surround '[data-hook="taxon_products"]'
-<% if @taxon.children.empty? %>
+text "<% if @taxon.children.empty? %>
   <%= render_original %>
-<% end %>
+<% end %>"
