@@ -1,0 +1,7 @@
+<!-- insert_after 'li#search-bar' -->
+<li id="link-to-cart" data-hook>
+  <noscript>
+    <%= link_to Spree.t(:cart), '/cart' %>
+  </noscript>
+</li>
+

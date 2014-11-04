@@ -1,0 +1,24 @@
+<!-- replace 'li#home-link' -->
+<li id="home-link" class="taxon-menu-item" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+
+<li id="fabrics-link" class="taxon-menu-item">  Fabric
+  <ul class="subtaxon-menu">
+    <% Spree::Taxon.find_by(name: "Fabric").children.each do |child| %>
+      <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/fabric/" + child.name.downcase.gsub(/\s+/,"-") %></li><br/>
+    <% end %>
+    <li>- - - - - - - - - -</li>
+  </ul>
+</li>
+
+<li id="haberdashery-link" class="taxon-menu-item">  Haberdashery
+  <ul class="subtaxon-menu">
+    <% Spree::Taxon.find_by(name: "Haberdashery").children.each do |child| %>
+      <li class="subtaxon-menu-item"><%= link_to child.name, spree.root_path + "t/haberdashery/" + child.name.downcase.gsub(/\s+/,"-") %></li><br/>
+    <% end %>
+    <li>- - - - - - - - - - - - - -</li>
+  </ul>
+</li>
+
+<li id="sizeguide-link" class="taxon-menu-item">   <%= link_to "Size Guide",   spree.root_path + "size-guide" %></li>
+<li id="delivery-link" class="taxon-menu-item">    <%= link_to "Delivery",     spree.root_path + "delivery" %></li>
+<li id="blog-link" class="taxon-menu-item">        <%= link_to "blog",         "http://blog.cwilt.co.uk"%></li>
