@@ -1,0 +1,4 @@
+<!-- insert_after 'div#footer-right' -->
+<div class="columns omega eight" id="footer-rightmost">
+  <!-- PayPal Logo --><table cellpadding="10" cellspacing="0" align="center" border="0"><tbody><tr style="border: medium none;" id="paypal-row"><td style="padding: 0px;" align="center"><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png" alt="PayPal Acceptance Mark" border="0"></a></td></tr></tbody></table><!-- PayPal Logo -->
+</div>

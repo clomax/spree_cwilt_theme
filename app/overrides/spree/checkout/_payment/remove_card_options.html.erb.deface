@@ -1,0 +1,8 @@
+<!-- replace ".card_options" -->
+<div class="card_options" style="display:none;">
+  <%= radio_button_tag 'use_existing_card', 'yes', false %>
+  <label for="use_existing_card_yes">Use an existing card on file</label>
+  <br/>
+  <%= radio_button_tag 'use_existing_card', 'no', true %>
+  <label for="use_existing_card_no">Use a new card / payment method</label>
+</div>

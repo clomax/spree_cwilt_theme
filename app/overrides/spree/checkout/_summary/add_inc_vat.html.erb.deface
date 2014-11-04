@@ -1,0 +1,2 @@
+<!-- insert_after 'erb[loud]:contains("order.display_item_total.to_html")' -->
+inc. VAT

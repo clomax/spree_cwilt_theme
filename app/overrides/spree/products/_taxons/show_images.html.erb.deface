@@ -1,0 +1,25 @@
+<!-- replace 'ul#similar_items_by_taxon' -->
+<% products = [] %>
+<% taxons = @product.taxons %>
+<% (1..4).each do %>
+  <% taxon = taxons.sample %>
+  <% product = taxon.products.all.sample %>
+  <% products.push(product) unless products.include?(product) or product.id == @product.id %>
+<% end %>
+
+<% unless products.length == 0 %>
+  <h6 class="product-section-title">You may also like:</h6>
+<% end %>
+
+<ul class="similar_products_list" data-hook>
+  <% products.each do |p| %>
+    <% url = product_url(p, :taxon_id => @taxon.try(:id) ) %>
+    <li itemtype="http://schema.org/Product">
+      <div class="similar_product_image">
+        <%= link_to small_image(p, :itemprop => "image"), url, :itemprop => 'url' %>
+        <%= link_to truncate(p.name, :length => 50), url, :class => 'info', :itemprop => "name", :title => p.name %><br />
+        <span class="non-broken-price" itemprop="price" >£<%= number_with_precision(p.price, :precision => 2) %></span>
+      </div>
+    </li>
+  <% end %>
+</ul>

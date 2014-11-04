@@ -1,0 +1,6 @@
+Deface::Override.new(
+  :virtual_path => 'spree/shared/_footer',
+  :surround     => 'tr#paypal-row img',
+  :text         => "<span id=\"switcher\"><%= render_original %></span>",
+  :name         => 'paypal_image_span')
+

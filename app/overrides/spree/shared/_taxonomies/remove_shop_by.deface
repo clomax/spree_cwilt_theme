@@ -1,0 +1,3 @@
+replace_contents 'erb[loud]:contains(":shop_by_taxonomy")'
+text " taxonomy.name %>"
+

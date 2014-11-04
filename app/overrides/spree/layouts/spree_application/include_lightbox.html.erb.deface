@@ -1,0 +1,10 @@
+<!-- insert_after 'erb[loud]:contains("analytics")' -->
+<script type='text/javascript'>
+  $(document).ready(function () {
+    $('#main-image').magnificPopup({
+      delegate: 'a',
+      type: 'image'
+    });
+  });
+</script>
+

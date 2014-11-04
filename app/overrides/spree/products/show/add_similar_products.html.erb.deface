@@ -1,0 +1,2 @@
+<!-- insert_after '[data-hook="product_show"]' -->
+<%= render :partial => 'taxons' %>
