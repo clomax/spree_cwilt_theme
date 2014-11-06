@@ -168,7 +168,7 @@ h1:not(.page-title) {
 
 .container .twelve.columns {
   width: 668px;
-  margin-left: 34px;
+  /*margin-left: 34px;*/
 }
 
 .static_page_table {
@@ -716,7 +716,7 @@ nav #main-nav-bar li a {
   }
 
   figure img { width: 180px;}
-  figure img {left: 60% !important; }
+  figure img {left: 64% !important; }
 
   .mob-menu-list {margin-left: 10px; }
   .mob-menu-list li {
@@ -730,6 +730,17 @@ nav #main-nav-bar li a {
   #top-nav-bar    { display: none; }
   ul#main-nav-bar { display: none; }
   aside#sidebar   { display: none; }
+
+  span[id="switcher"] {
+    display: block;
+    background-image: url(https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 100px !important;
+    height: 50px !important;
+  }
+  tr#paypal-row img { display: none !important; }
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -743,16 +754,6 @@ nav #main-nav-bar li a {
 
   footer div#contents { font-size: 9pt !important; margin-left: 10px; }
   .container .eight.columns { max-width: 33.333%; }
-
-  span[id="switcher"] {
-    display: block;
-    background-image: url(https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png) !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-    width: 100px !important;
-    height: 50px !important;
-  }
-  tr#paypal-row img { display: none !important; }
 
   #footer-pages ul { font-size: 8pt; }
   .taxon-title { width: 275px; }
@@ -782,4 +783,15 @@ nav #main-nav-bar li a {
   .similar_products_list li:first-child div { margin-left: 10px; }
   .similar_products_list div { margin-bottom: 10px; }
   .product-section-title { margin-left: 10px; }
+}
+
+@media only screen and (max-size: 479px) {
+  .page-title {
+    font-size: 12pt;
+    border: none;
+  }
+
+  #wrapper { margin-top: 150px}
+
+  ul#products { padding-left: 34px; }
 }
