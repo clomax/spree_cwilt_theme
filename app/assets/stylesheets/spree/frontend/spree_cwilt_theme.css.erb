@@ -702,14 +702,22 @@ nav #main-nav-bar li a {
 }
 
 @media (max-width: 767px) {
-  #hamburger { display: block; }
-
   #mobile-menu {
+    display: block;
     background-color: #DDD;
     margin-left: -40px;
     margin-right: -40px;
     padding: 5px;
+    height: 50px;
   }
+
+  .mob-menu-list {margin-left: 10px; }
+  .mob-menu-list li {
+    line-height: 40px;
+    float: left;
+    margin-top:5px;
+  }
+  #srch { float: right; }
 
   #hmb_menu { float:left;}
   #srch {float:right; line-height: 38px;
