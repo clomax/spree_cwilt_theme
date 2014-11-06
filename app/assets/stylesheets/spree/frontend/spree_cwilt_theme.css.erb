@@ -484,7 +484,7 @@ nav#top-nav-bar {
   float: right;
 }
 
-#hamburger { display: none; }
+#mobile-menu{ display: none; }
 
 .no-bottom-border {
   border-bottom: 1px solid #fff;
@@ -701,23 +701,18 @@ nav #main-nav-bar li a {
   figure img { left: 30% !important }
 }
 
-@media only screen and (max-width:767px) {
+@media (max-width: 767px) {
+  #hamburger { display: block; }
+
   #mobile-menu {
-    display: block;
     background-color: #DDD;
     margin-left: -40px;
     margin-right: -40px;
     padding: 5px;
   }
 
-  #hmb_menu {
-    color: #808080;
-    float: left;
-  }
-
-  #srch {
-    float: left;
-  }
+  #hmb_menu { float:left;}
+  #srch {float:right; line-height: 38px;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {

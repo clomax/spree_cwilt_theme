@@ -1,2 +1,2 @@
-insert_after 'figure'
+insert_before 'figure'
 text "<%= render :partial => 'spree/shared/mobile_nav_menu' %>"
