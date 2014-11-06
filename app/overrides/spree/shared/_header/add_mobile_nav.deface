@@ -1,0 +1,2 @@
+<!-- insert_after 'figure' -->
+<%= render :partial => 'spree/shared/mobile_nav_menu' %>

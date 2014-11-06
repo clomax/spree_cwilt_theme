@@ -700,12 +700,17 @@ nav #main-nav-bar li a {
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+  header {height: 180px}
+  #top-nav-bar { display: none; }
+  figure {
+    position: relative;
+    display: block;
+  }
+
   aside#sidebar               { display: none; }
   .showcase                   { display: none !important; }
-  ul#main-nav-bar li.taxon-menu-item {
-    max-width: initial !important;
-    font-size: 7pt !important;
-  }
+
+  ul#main-nav-bar { display: none }
 
   .page-title { font-size: 16pt; width: 275px; text-align: center; }
 
@@ -746,4 +751,8 @@ nav #main-nav-bar li a {
     margin-bottom: 10px;
     border: none;
   }
+
+  .similar_products_list li:first-child div { margin-left: 10px; }
+  .similar_products_list div { margin-bottom: 10px; }
+  .product-section-title { margin-left: 10px; }
 }
