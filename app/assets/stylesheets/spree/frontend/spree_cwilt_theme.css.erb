@@ -681,6 +681,10 @@ nav #main-nav-bar li a {
   }
 }
 
+@media (max-width: 959px) {
+   .showcase  { display: none !important; }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
   #content                    { width: 463px; }
@@ -713,28 +717,22 @@ nav #main-nav-bar li a {
 
   .mob-menu-list {margin-left: 10px; }
   .mob-menu-list li {
-    line-height: 40px;
     float: left;
-    margin-top:5px;
+    color: #808080;
   }
   #srch { float: right; }
 
-  #hmb_menu { float:left;}
-  #srch {float:right; line-height: 38px;
+  #top-nav-bar    { display: none; }
+  ul#main-nav-bar { display: none; }
+  aside#sidebar   { display: none; }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  header {height: 180px}
-  #top-nav-bar { display: none; }
+  header {height: 225px}
   figure {
     position: relative;
     display: block;
   }
-
-  aside#sidebar               { display: none; }
-  .showcase                   { display: none !important; }
-
-  ul#main-nav-bar { display: none }
 
   .page-title { font-size: 16pt; width: 275px; text-align: center; }
 
