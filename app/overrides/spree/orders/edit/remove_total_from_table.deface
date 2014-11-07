@@ -1,0 +1,1 @@
+remove '.cart-total > td:nth-child(1)'
