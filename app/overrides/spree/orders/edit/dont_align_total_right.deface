@@ -1,0 +1,2 @@
+remove_from_attributes '.cart-total > td:nth-child(1)'
+attributes :align
