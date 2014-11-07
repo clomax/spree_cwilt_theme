@@ -705,6 +705,7 @@ nav #main-nav-bar li a {
   figure img { left: 30% !important }
 }
 
+
 @media (max-width: 767px) {
   #mobile-menu {
     display: block;
@@ -743,6 +744,39 @@ nav #main-nav-bar li a {
 
   #content h1 { text-align: center; }
 
+  /* RESPONSIVE CART TABLE */
+  table, thead, tbody, th, tr, td {
+    display: block;
+  }
+
+  thead {
+    position: absolute;
+    top: -9999px;
+                left: -9999px;
+  }
+
+  tr { border: 1px solid #ccc; }
+  .cart-item-total-header {display: none;}
+  .cart-item-total {display: none}
+  .cart-item-description {width: 95% !important;}
+  .line-item-description { display: none}
+  .cart-item-image {display: none }
+
+  td {
+    border: none;
+    /border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -750,6 +784,7 @@ nav #main-nav-bar li a {
   figure {
     position: relative;
     display: block;
+    right: 3%;
   }
 
   .page-title { font-size: 16pt; width: 275px; text-align: center; }
