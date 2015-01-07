@@ -1,4 +1,4 @@
 <!-- insert_bottom 'footer#footer' -->
 <div id="copyright">
-  &copy; 2014 Cwilt
+  &copy; <%= Time.now.year %> Cwilt
 </div>
