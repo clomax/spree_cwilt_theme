@@ -28,3 +28,10 @@ function startSlider() {
 
   }, 5000);
 }
+
+(function() {
+  $('.hmb_menu').click(function() {
+    $('.mobile-subtaxon-menu').toggleClass('expand')
+  });
+}).call(this);
+
